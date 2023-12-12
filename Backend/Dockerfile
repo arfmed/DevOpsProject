@@ -8,7 +8,7 @@ WORKDIR /app
 COPY target/eventsProject-1.0.0-SNAPSHOT.jar /app/eventsProject.jar
 
 # Expose the port on which the application will run
-EXPOSE 8082
+EXPOSE 8089
 
 # Command to run the application when the container starts
 CMD ["java", "-jar", "eventsProject.jar"]
