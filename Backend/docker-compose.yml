@@ -16,7 +16,9 @@ services:
 
   # Spring Boot service
   springboot-app:
-    image: my-events-app:latest 
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "8089:8089"
     depends_on:
